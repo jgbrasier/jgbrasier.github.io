@@ -17,15 +17,13 @@ Education
 
 Work experience
 ======
+* Jul 2023 - present: Senior Research Associate in Data Science, _Moderna_
+
 * Jun-Aug 2022: Data Science and Artificial Intelligence Intern, _Moderna_
-  * Developed geometric deep learning solvers for scaling combinatorial scheduling problems
 
 * May-Aug 2021: Research Intern, _Inria_
-  * Developed a Julia package for gradient based parameter estimation in linear and nonlinear Kalman Filters
 
 * Jul-Dec 2020: Artificial Intelligence Intern, _EOS Imaging_
-  * Implemented convolutional neural networks for automatic vertebra segmentation from raw X-Ray captures.
-  * Developed 2D to 3D graph matching algorithms to speed up (x5) automatic spinal reconstruction.
   
 Skills
 ======
@@ -53,4 +51,4 @@ Teaching
   
 Interests
 ======
-* Rugby
+* Rugby, Triathlon
