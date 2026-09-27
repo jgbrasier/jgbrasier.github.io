@@ -9,26 +9,48 @@ redirect_from:
 
 {% include base_path %}
 
+Profile
+======
+Product-focused data scientist and machine learning lead with 6+ years of experience building AI systems across biopharma, manufacturing, regulatory operations, and biomedical research. Python expert with a track record of taking machine learning and generative AI products from concept to production.
+
 Education
 ======
-* MS in Data Science, Harvard University, 2023
-* MEng in Physics, ESPCI Paris - PSL, 2021
-* BS in Physics and Chemisty, ESPCI Paris - PSL, 2019
+* M.S. in Data Science, Research Track, Harvard University
+* M.Eng. in Physics, ESPCI Paris - PSL University
+* B.S. in Physics and Chemistry, ESPCI Paris - PSL University
 
 Work experience
 ======
-* Jul 2023 - present: Senior Research Associate in Data Science, _Moderna_
+### Vertex Pharmaceuticals — Senior Data Scientist II, Manager Level
+_Boston, MA · 2025-present_
 
-* Jun-Aug 2022: Data Science and Artificial Intelligence Intern, _Moderna_
+Built a really complex probabilistic dosing digital twin for cell and gene therapy that probably no one is going to use. Also got AI agents to query graph databases in real time for context-aware retrieval.
 
-* May-Aug 2021: Research Intern, _Inria_
+### Moderna — Data Scientist, Tech Lead
+_Cambridge, MA · 2023-2025_
 
-* Jul-Dec 2020: Artificial Intelligence Intern, _EOS Imaging_
-  
-Skills
+Built a bunch of AI algorithms for CMC teams that totalled eight figures in ROI.
+
+### Harvard Medical School, Department of Biomedical Informatics — Research Fellow, Zitnik Lab
+_Boston, MA · 2022-2023_
+
+Built geometric deep learning models to predict immune-system binding from molecular surfaces.
+
+### Inria, DYOGENE Lab — Research Engineer
+_Paris, France · 2021_
+
+Built differentiable state-space models and taught Kalman filters to tune themselves.
+
+### EOS Imaging — Artificial Intelligence Engineer
+_Paris, France · 2020_
+
+Made automated 3D spine reconstruction five times faster with computer vision.
+
+Technical stack
 ======
-* __Languages__: Python, SQL, Julia, R
-* __Tools__: Git, Jupyter, GCP, AWS
+* **Languages:** Python, Julia, SQL, GraphQL, Gremlin, Cypher, SPARQL; working knowledge of JavaScript, React, C, and C++
+* **AI/ML:** Generative AI agents, retrieval-augmented generation, probabilistic modeling, geometric deep learning, PyTorch, TensorFlow, scikit-learn, and XGBoost
+* **Cloud and deployment:** AWS, Azure, Snowflake, Docker, FastAPI, GitHub Actions, and Terraform
 
 <!-- Publications
 ======
@@ -51,4 +73,5 @@ Teaching
   
 Interests
 ======
-* Rugby, Triathlon
+* Elite sponsored triathlete with multiple Ironman podiums and World Championship qualifications
+* Former national-level competitive rugby player
