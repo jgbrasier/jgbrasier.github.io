@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { appearances } from '../../data/site';
+
+export function getStaticPaths() {
+  return appearances.map((item) => ({ params: { slug: item.slug }, props: { item } }));
+}
+
+const { item } = Astro.props;
+---
+
+<BaseLayout title={item.title} description={item.description} canonicalPath={`/talks/${item.slug}/`}>
+  <article class="shell narrow article-page">
+    <a class="back-link" href="/talks/">← All appearances</a>
+    <header>
+      <p class="kicker">{item.kind} · {item.date}</p>
+      <h1>{item.title}</h1>
+      <p class="article-deck">{item.host}</p>
+    </header>
+    <div class="article-body">
+      <p>{item.description}</p>
+      {item.links.length > 0 && (
+        <div class="link-cluster" aria-label="External links">
+          {item.links.map((link) => (
+            <a class="button button-small" href={link.url}>{link.label} <span aria-hidden="true">↗</span></a>
+          ))}
+        </div>
+      )}
+    </div>
+  </article>
+</BaseLayout>

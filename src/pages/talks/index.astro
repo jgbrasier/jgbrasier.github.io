@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AppearanceCard from '../../components/AppearanceCard.astro';
+import { appearances } from '../../data/site';
+---
+
+<BaseLayout title="Appearances" description="Talks, seminars, and podcast appearances by Jean-Guillaume Brasier.">
+  <header class="page-hero shell">
+    <p class="kicker">Appearances</p>
+    <h1>Sometimes they give me a microphone.</h1>
+    <p>Talks about AI and science, plus the occasional conversation about voluntarily exercising for a very long time.</p>
+  </header>
+  <section class="shell appearance-grid appearance-grid-page" aria-label="Talks and podcasts">
+    {appearances.map((item) => <AppearanceCard item={item} />)}
+  </section>
+</BaseLayout>

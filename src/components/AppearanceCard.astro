@@ -1,0 +1,25 @@
+---
+interface Props {
+  item: {
+    slug: string;
+    kind: string;
+    title: string;
+    host: string;
+    date: string;
+    description: string;
+  };
+}
+
+const { item } = Astro.props;
+---
+
+<article class="appearance-card">
+  <div class="appearance-topline">
+    <span class="eyebrow">{item.kind}</span>
+    <time>{item.date}</time>
+  </div>
+  <h3><a href={`/talks/${item.slug}/`}>{item.title}</a></h3>
+  <p class="appearance-host">{item.host}</p>
+  <p>{item.description}</p>
+  <a class="text-link" href={`/talks/${item.slug}/`}>Details <span aria-hidden="true">↗</span></a>
+</article>

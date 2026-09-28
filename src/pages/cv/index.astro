@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { education, experience, stack } from '../../data/site';
+---
+
+<BaseLayout title="Work" description="Experience, education, and technical background for Jean-Guillaume Brasier.">
+  <header class="page-hero shell narrow">
+    <p class="kicker">Work</p>
+    <h1>The useful version of my CV.</h1>
+    <p>No six-line bullets. Just what I worked on and whether anything happened.</p>
+  </header>
+
+  <section class="shell narrow timeline" aria-label="Work experience">
+    {experience.map((item) => (
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <span>{item.dates}</span>
+          <span>{item.location}</span>
+        </div>
+        <div class="timeline-content">
+          <h2>{item.company}</h2>
+          <p class="timeline-role">{item.role}</p>
+          <p>{item.description}</p>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <section class="section shell narrow details-grid">
+    <div>
+      <p class="eyebrow">Education</p>
+      {education.map(([school, degree]) => (
+        <div class="detail-item">
+          <h3>{school}</h3>
+          <p>{degree}</p>
+        </div>
+      ))}
+    </div>
+    <div>
+      <p class="eyebrow">Technical stack</p>
+      {stack.map(([label, value]) => (
+        <div class="detail-item">
+          <h3>{label}</h3>
+          <p>{value}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="shell narrow inline-callout">
+    <p><strong>Teaching:</strong> CS107/AC207, Systems Development for Computational Science at Harvard.</p>
+    <a class="text-link" href="/teaching/">Details <span aria-hidden="true">→</span></a>
+  </section>
+</BaseLayout>
