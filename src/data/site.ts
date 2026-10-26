@@ -81,14 +81,14 @@ export const appearances = [
     year: '2026',
     description:
       'A practical look at the data foundations CMC teams need before predictive manufacturing can become more than a slide-deck ambition.',
-    primaryUrl: 'https://www.lab-of-the-future.com/USA/agenda/',
-    primaryLabel: 'View the agenda',
+    primaryUrl: 'https://www.linkedin.com/feed/update/urn:li:activity:7434378982474612736/',
+    primaryLabel: 'View on LinkedIn',
     links: [
-      { label: 'Conference agenda', url: 'https://www.lab-of-the-future.com/USA/agenda/' },
       {
-        label: 'Lab of the Future',
-        url: 'https://www.linkedin.com/company/lab-of-the-future-congress/',
+        label: 'LinkedIn',
+        url: 'https://www.linkedin.com/feed/update/urn:li:activity:7434378982474612736/',
       },
+      { label: 'Conference agenda', url: 'https://www.lab-of-the-future.com/USA/agenda/' },
     ],
   },
   {
@@ -99,10 +99,12 @@ export const appearances = [
     date: 'July 21, 2021',
     year: '2021',
     description:
-      'Differentiating through linear and nonlinear state-space models to estimate their parameters after the fact.',
-    primaryUrl: '',
-    primaryLabel: '',
-    links: [],
+      'Gradient-based maximum a posteriori parameter estimation for linear and nonlinear Gaussian state-space models using automatic differentiation through Kalman filters.',
+    primaryUrl: '/parameter-estimation-state-space-models.pdf',
+    primaryLabel: 'View seminar slides',
+    links: [
+      { label: 'Seminar slides (PDF)', url: '/parameter-estimation-state-space-models.pdf' },
+    ],
   },
 ];
 

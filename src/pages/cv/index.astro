@@ -4,13 +4,12 @@ import { education, experience, stack } from '../../data/site';
 ---
 
 <BaseLayout title="Work" description="Experience, education, and technical background for Jean-Guillaume Brasier.">
-  <header class="page-hero shell narrow">
+  <header class="page-hero resume-hero shell narrow">
     <p class="kicker">Work</p>
-    <h1>The useful version of my CV.</h1>
-    <p>No six-line bullets. Just what I worked on and whether anything happened.</p>
+    <h1>Resume</h1>
   </header>
 
-  <section class="shell narrow timeline" aria-label="Work experience">
+  <section class="shell narrow timeline resume-timeline" aria-label="Work experience">
     {experience.map((item) => (
       <article class="timeline-item">
         <div class="timeline-meta">
@@ -20,7 +19,6 @@ import { education, experience, stack } from '../../data/site';
         <div class="timeline-content">
           <h2>{item.company}</h2>
           <p class="timeline-role">{item.role}</p>
-          <p>{item.description}</p>
         </div>
       </article>
     ))}
